@@ -23,12 +23,11 @@ const LayoutBase = (props) => {
     headerSlot,
     meta
   } = props
-  const leftAreaSlot = <Live2D/>
   return (<>
     <CommonHead meta={meta} />
     <TopNav {...props}/>
     <div className='flex'>
-      <AsideLeft {...props} slot={leftAreaSlot}/>
+      <AsideLeft {...props} />
       <main id='wrapper' className='flex w-full py-8 justify-center'>
         <div id='container-inner' className='2xl:max-w-6xl md:max-w-4xl w-full'>
           <div> {headerSlot} </div>
