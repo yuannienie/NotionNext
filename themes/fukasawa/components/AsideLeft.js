@@ -50,9 +50,9 @@ function AsideLeft (props) {
 
     <section className='sticky top-0 pt-12'>
       <Catalog toc={post?.toc}/>
-      <div className='flex justify-center'>
+      {/* <div className='flex justify-center'>
         <div>{slot}</div>
-      </div>
+      </div> */}
     </section>
 
   </div>
